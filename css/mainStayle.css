@@ -15,7 +15,7 @@ body{
 }
 
 header{
-    height: 80px;
+    height: 60px;
 }
 
 .navBar{
@@ -42,9 +42,26 @@ header{
 
     transition-property: top;
     transition-duration: 200ms;
-    transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in;
+}
+
+.bg-orange{
+    background-color: rgb(255, 115, 0);
+}
+
+.bg-red{
+    background-color: rgb(221, 36, 36);
 }
 
 .navLink:hover .imgHome{
     top: 0px;
+}
+
+.navLink a{
+    color: white;
+}
+
+.navLink a:hover{
+    text-decoration: none;
+    color: white;
 }
