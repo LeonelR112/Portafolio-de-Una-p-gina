@@ -18,24 +18,33 @@ header{
     height: 80px;
 }
 
-.navBar ul{
-    background-color: indianred;
-    width: 100%;
-    height: 100%;
-    justify-content: right;
-    align-items: flex-end;
+.navBar{
     display: flex;
+    justify-content: right;
+    align-items: center;
 }
 
-.navBar ul li{
-    list-style: none;
+.navLink{
+    line-height: 3em;
+    height: 3em;
+    width: auto;
+    position: relative;
+    overflow: hidden;
 }
 
-.navBar ul li a{
-    display: block;
-    background-color: indigo;
-    margin-left: 1em;
-    padding: 1em;
-    justify-self: right;
+/*-----------imgHome--------------*/
+.imgHome{
+    position: absolute;
+    background-color: royalblue;
+    top: 50px;
+    height: 100%;
+    width: 100%;
+
+    transition-property: top;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
 }
 
+.navLink:hover .imgHome{
+    top: 0px;
+}
