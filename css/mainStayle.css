@@ -98,4 +98,36 @@ header{
 
 .summary{
     border: 1px solid rgb(39, 39, 39);
+    background-color: rgb(231, 231, 231);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes glassReflect{
+    0%{
+        left: 0px;
+    }
+    100%{
+        left: 800px;
+    }
+}
+
+.glass{
+    background: url('./../assets/imgs/glass.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity: 0.2;
+    width: 10%;
+    height: 100%;
+    position: absolute;
+    top:0px;
+    left: -80px;
+
+    animation-name: glassReflect;
+    animation-delay: 5000ms;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
 }
