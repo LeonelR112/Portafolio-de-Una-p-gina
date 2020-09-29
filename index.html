@@ -90,7 +90,7 @@
         <!--Sobre mí-->
         <section class="about p-5">
             <div class="p-2">
-                <h2 class="title1">Sobre Mí</h2>
+                <h2 class="title3 text-center text-light">SOBRE MÍ</h2>
                 <hr style="border:1px solid white">
                 <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui rem suscipit earum optio natus temporibus officiis laborum cumque labore! In est sint reprehenderit distinctio culpa ex facere maxime enim iusto?</p>
             </div>
@@ -154,9 +154,9 @@
         <!--fin de Sobre mi-->
 
         <!--sección de proyectos-->
-        <section class="text-light proyectos pt-5">
+        <section class="text-light proyectos pt-5 pb-5">
             <div class="p-2">
-                <h1 class="title1">Proyectos</h1>
+                <h1 class="title3 text-center">PROYECTOS</h1>
                 <hr style="border:1px solid white">
             </div>
 
@@ -180,7 +180,7 @@
             <!--fin caja proyectos-->
 
             <!--Caja proyectos-->
-            <div class="container">
+            <div class="container mt-5">
                 <h3>Desarrollo Back-End</h3>
                 <div class="background3 row p-4">
                     <!--Carta proyecyo-->
@@ -201,13 +201,50 @@
         <!--fin caja proyectos-->
 
         <!--sección Contacto-->
-        <section class="text-light bg-customBlue pt-5">
+        <section class="text-light bg-customBlue p-4">
             <div class="p-3">
-                <h2 class="title1">Contacto</h2>
+                <h2 class="title3 text-center">CONTACTO</h2>
                 <hr style="border:1px solid white">
             </div>
             <div class="container">
-                <div class="info1 bg-success row">
+                <div class="info1 row p-2">
+                    <div class="col-12 col-sm-12 col-md-6">
+                        <ul>
+                            <li class="title2"><img src="./assets/imgs/wts.png" width="40px" alt="imgPhone"> 15-0000-0000</li>
+                            <li class="title2 mb-3"><img src="./assets/imgs/gmail.png" width="40px" alt="imgEmail"> Email@gmail.com</li>
+                            <li>Redes disponibles</li>
+                            <li>
+                                <ul class="d-flex justify-content-around w-50 m-3">
+                                    <li><a href="#" title="Facebook"><img src="./assets/imgs/fc.png" width="40px" alt="facebookImg"></a></li>
+                                    <li><a href="#" title="Linkedin"><img src="./assets/imgs/in.png" width="40px" alt="inImg"></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6">
+                        <h2 class="text-light text-center">Formulario de Contacto</h2>
+                        <hr style="border: 1px solid white">
+                        <form>
+                            <div class="form-group">
+                              <label for="nombre">Nombre</label>
+                              <input type="text" class="form-control" id="nombre" aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group">
+                                <label for="apellido">Apellido</label>
+                                <input type="text" class="form-control" id="apellido" aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="text" class="form-control" id="email" aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group">
+                                <label for="Textarea1">Mensaje</label>
+                                <textarea class="form-control" id="Textarea1" rows="3"></textarea>
+                              </div>
+                            <button type="submit" class="btn btn-outline-light w-100 shadow">Enviar</button>
+                          </form>
+                    </div>
+
                 </div>
             </div>
         </section>
