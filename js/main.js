@@ -39,4 +39,21 @@ $(window).ready(function(){
         menuResponsivo.style.top = '-500px';
     })
     
+
+    /*Contenido de información en el "about" */
+
+    $('#clickContenido1').click(function(e){
+        e.preventDefault()
+        let contenido1 = document.getElementById('contenido1')
+        let clicker = e.target.text
+
+        if(clicker == "+"){
+            contenido1.style.height = "10em";
+            document.getElementById('clickContenido1').text = "-"
+        }
+        else{
+            contenido1.style.height = "0px";
+            document.getElementById('clickContenido1').text = "+"
+        }
+    })
 })

@@ -93,7 +93,7 @@ main{
 /*--------------------------------------*/
 
 .bg-orange{
-    background-color: rgb(132, 219, 253)53);
+    background-color: rgb(132, 219, 253);
 }
 
 .bg-red{
@@ -360,3 +360,11 @@ main{
 
 /*-------cajas info-------------*/
 
+.contenido1{
+    height: 0px;
+    overflow: hidden;
+
+    transition-property: height;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+}
