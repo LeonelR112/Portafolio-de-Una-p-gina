@@ -19,13 +19,36 @@
 </head>
 
 <body>
+    <!--Menú responsivo-->
+    <!-->>>>>>>>>>>>>CONFIGURAR EL MENU RESPONSIVO PARA QUE BAJE CON UN CLICK<<<<<<<<<-->
+    <div class="menuResponsivo bg-darkgrey">
+        <h3 class="text-white">Menú</h3>
+        <hr style="border: 1px solid white">
+        <div class="option">
+            <a href="#" class="link1">INICIO</a>
+        </div>
+        <div class="option">
+            <a href="#" class="link1">SOBRE MÍ</a>
+        </div>
+        <div class="option">
+            <a href="#" class="link1">PROYECTOS</a>
+        </div>
+        <div class="option">
+            <a href="#" class="link1">CONTACTO</a>
+        </div>
+        <div class="optionExit">
+            <a href="#" title="cerrar menú" id="closeMenuResponsive">X</a>
+        </div>
+    </div>
+    <!--Fin menú responsivo-->
+
     <header class="bg-dark text-light">
         <div class="row h-100">
             <div class="col-12 col-md-6 col-lg-4 text-center font-title1 d-flex align-items-center justify-content-center mainName">
                 <a href="#" class="text-white">Nombre Apellido</a>
             </div>
             <!--Barra de navegación-->
-            <div class="navBar col-12 col-md-6 col-lg-8 h-100">
+            <div  id="navMenu" class="navBar col-12 col-md-6 col-lg-8 h-100">
                 
                 <div class="navLink bg-dark border-bottom">
                     <a href="#" class="pl-3 pr-3">INICIO
@@ -60,6 +83,9 @@
                 </div> 
             </div>
             <!--Fin de la barra de navegación-->
+            <div class="menuResponsiveIMG col-12" id="menuResponsive">
+                <a href="#" title="Menú"><img class="shadow-n" src="./assets/imgs/menu.png" width="50px" alt="menu" style="border-radius: 10px;"></a>
+            </div>
         </div>    
     </header>
 

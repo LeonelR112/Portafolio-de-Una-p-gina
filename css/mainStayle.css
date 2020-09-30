@@ -229,6 +229,10 @@ header{
     background-color: rgb(180, 180, 180);
 }
 
+.bg-darkgrey{
+    background-color: rgb(56, 56, 56);
+}
+
 /*-----------------------------------*/
 
 /*---------sections------------------*/
@@ -267,4 +271,62 @@ header{
 
 #Textarea1{
     resize: none;
+}
+
+/*------------menú responsive------------*/
+
+.menuResponsiveIMG{
+    display: none;
+}
+
+.menuResponsivo{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    padding: 2em;
+    z-index: 10;
+    position: absolute;
+    top: -30em;
+}
+
+.option{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    line-height: 50px;
+    margin-bottom: 10px;
+}
+
+.optionExit{
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 50px;
+}
+
+.optionExit a{
+    color: white;
+}
+
+.optionExit a:hover{
+    text-decoration:none;
+}
+
+.link1{
+    color: white;
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    transition-property: color, background-color;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+}
+
+.link1:hover{
+    background-color: rgb(148, 148, 148);
+    color: rgb(39, 39, 39);
+    text-decoration: none;
 }
