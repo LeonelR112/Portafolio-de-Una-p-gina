@@ -2,13 +2,12 @@ $(window).ready(function(){
 
     let menuResponsive = document.getElementById('menuResponsive');
     let menuNav = document.getElementById('navMenu');
+    let botonMenu = document.getElementById('menuClick')
 
     if(window.innerWidth < 460){
         menuNav.style.display = 'none'
         menuResponsive.style.display = "block";
 
-        console.log(menuNav.style.display);
-        console.log(menuResponsive.style.display);
     }
 
     $(window).resize(function(e) {
@@ -26,4 +25,18 @@ $(window).ready(function(){
 
     })
 
+    let menuResponsivo = document.getElementById('menuResponsivo');
+    $('#menuClick').click(function (e) {
+        console.log(e)
+        e.preventDefault();
+
+        menuResponsivo.style.top = '0px';
+
+    })
+
+    $('#closeMenuResponsive').click(function (e) {
+        e.preventDefault()
+        menuResponsivo.style.top = '-500px';
+    })
+    
 })

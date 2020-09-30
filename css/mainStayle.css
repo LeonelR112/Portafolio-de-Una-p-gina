@@ -88,6 +88,10 @@ header{
     background-color: rgb(0, 124, 207);
 }
 
+.bg-lightBlue{
+    background-color: rgb(0, 174, 255);
+}
+
 .navLink:hover .imgHome{
     top: 0px;
 }
@@ -281,12 +285,15 @@ header{
 
 .menuResponsivo{
     position: fixed;
-    top: 0px;
+    top: -500px;
     width: 100%;
     padding: 2em;
     z-index: 10;
-    position: absolute;
-    top: -30em;
+    position: fixed;
+
+    transition-property: top;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
 }
 
 .option{
@@ -330,3 +337,6 @@ header{
     color: rgb(39, 39, 39);
     text-decoration: none;
 }
+
+/*-------cajas info-------------*/
+
