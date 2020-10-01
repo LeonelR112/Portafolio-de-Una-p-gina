@@ -48,7 +48,7 @@ $(window).ready(function(){
         let clicker = e.target.text
 
         if(clicker == "+"){
-            contenido1.style.height = "10em";
+            contenido1.style.height = "20em";
             document.getElementById('clickContenido1').text = "-"
         }
         else{
@@ -56,4 +56,36 @@ $(window).ready(function(){
             document.getElementById('clickContenido1').text = "+"
         }
     })
+
+    $('#clickContenido2').click(function(e){
+        e.preventDefault()
+        let contenido2 = document.getElementById('contenido2')
+        let clicker = e.target.text
+
+        if(clicker == "+"){
+            contenido2.style.height = "20em";
+            document.getElementById('clickContenido2').text = "-"
+        }
+        else{
+            contenido2.style.height = "0px";
+            document.getElementById('clickContenido2').text = "+"
+        }
+    })
+
+    $('#clickContenido3').click(function(e){
+        e.preventDefault()
+        let contenido3 = document.getElementById('contenido3')
+        let clicker = e.target.text
+
+        if(clicker == "+"){
+            contenido3.style.height = "20em";
+            document.getElementById('clickContenido3').text = "-"
+        }
+        else{
+            contenido3.style.height = "0px";
+            document.getElementById('clickContenido3').text = "+"
+        }
+    })
+
+
 })
