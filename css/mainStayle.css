@@ -19,6 +19,10 @@ body{
     height: 100%;
 }
 
+.mainName a:hover{
+    text-decoration:none;
+}
+
 header{
     height: auto;
     padding: 1em;
