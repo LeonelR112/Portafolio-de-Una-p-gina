@@ -27,15 +27,18 @@ $(window).ready(function(){
 
     let menuResponsivo = document.getElementById('menuResponsivo');
     $('#menuClick').click(function (e) {
-        console.log(e)
         e.preventDefault();
 
         menuResponsivo.style.top = '0px';
 
     })
 
-    $('#closeMenuResponsive').click(function (e) {
-        e.preventDefault()
+    $('#linkClose1,#linkClose2,#linkClose3,#linkClose4').click(function (e) {
+        menuResponsivo.style.top = '-500px';
+    })
+
+    $('#closeMenuResponsive').click(function(e){
+        e.preventDefault();
         menuResponsivo.style.top = '-500px';
     })
     
