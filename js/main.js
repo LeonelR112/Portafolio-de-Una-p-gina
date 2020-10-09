@@ -90,5 +90,53 @@ $(window).ready(function(){
         }
     })
 
+    /*----------certificados----------------*/
+
+    $(".certificateImg").click(function(e){
+        e.preventDefault();
+        /*console.log(e);
+        console.log(e.currentTarget.attributes);*/
+
+        let nameTarget = e.currentTarget.alt
+        let imagenCertificado = document.getElementById('imagenCertificado')
+        
+        switch (nameTarget) {
+            case "JSI":
+                imagenCertificado.src = './assets/imgs/certificates/C-JSIntroduction.png'
+            break;
+
+            case "HTML-I":
+                imagenCertificado.src = './assets/imgs/certificates/htmlCertificated.jpg'
+            break;
+        
+            default:
+                
+            break;
+        }
+    })
+
+    $(".disabledLink").click(function(e){
+        e.preventDefault();
+    })
+
+    //fondo animado
+    let bodyBackground = document.querySelector('body');
+    let frontEndBackground = document.querySelector('.background2')
+    let backEndBackground = document.querySelector('.background3')
+    console.log(frontEndBackground);
+
+    $(window).scroll(function (e){
+        let scrollY = $(window).scrollTop();
+        let scrollX = $(window).scrollLeft();
+
+        console.log("scrollY = " + scrollY);
+        console.log("scrollX = " + scrollX);
+
+        bodyBackground.style.backgroundPositionY = parseInt(scrollY / 8) + "%"
+        frontEndBackground.style.backgroundPositionY = parseInt(scrollY / 4) + "%"
+        backEndBackground.style.backgroundPositionY = parseInt(scrollY / 4)*0.20 + "%"
+
+        
+    })
 
 })

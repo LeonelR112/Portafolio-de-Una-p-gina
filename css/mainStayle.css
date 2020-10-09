@@ -3,8 +3,8 @@ body{
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Merriweather Sans', sans-serif;
-    background: url('./../assets/imgs/background1.jpg');
-    background-position: center;
+    background: url('./../assets/imgs/backgroundB.jpg');
+    background-position-y: 0%;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -56,7 +56,7 @@ main{
 .imgHome{
     position: absolute;
     /*background-color: rgb(184, 202, 255);*/
-    background-image: linear-gradient(rgb(155, 226, 253),rgb(69, 191, 212),rgb(36, 131, 148));
+    background-image: linear-gradient(rgb(155, 238, 253),rgb(0, 129, 214),rgb(0, 108, 151));
     top: 50px;
     height: 100%;
     width: 100%;
@@ -155,14 +155,14 @@ main{
 
 .background2{
     background:url('./../assets/imgs/background2.jpg');
-    background-position: center;
+    background-position-y: 0%;
     background-size: cover;
     background-attachment: fixed;
 }
 
 .background3{
-    background:url('./../assets/imgs/background3.jpeg');
-    background-position: center;
+    background:url('./../assets/imgs/background3B.jpg');
+    background-position-y: 0%;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -199,10 +199,13 @@ main{
     position: relative;
     overflow: hidden;
     width: 70%;
+    transform: rotateX(90deg);
 
     animation-name: rotate1;
     animation-timing-function: ease-in-out;
-    animation-duration: 800ms;
+    animation-delay: 500ms;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
 }
 
 /*---------------botones------------*/
@@ -386,5 +389,8 @@ main{
     transition-timing-function: ease-in-out;
 }
 
-/*-----------Caja de imagenes de certificados--------*/
+.disabledLink, .disabledLink:hover{
+    color: rgb(24, 24, 24);
+    text-decoration: none;
+}
 
