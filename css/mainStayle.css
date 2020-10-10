@@ -3,7 +3,8 @@ body{
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Merriweather Sans', sans-serif;
-    background: url('./../assets/imgs/backgroundB.jpg');
+    background: url('./../assets/imgs/mountain1.jpg');
+    background-blend-mode: lighten;
     background-position-y: 0%;
     background-size: cover;
     background-repeat: no-repeat;

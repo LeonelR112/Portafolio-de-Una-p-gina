@@ -91,11 +91,11 @@ $(window).ready(function(){
     })
 
     /*----------certificados----------------*/
-
+    /*
     $(".certificateImg").click(function(e){
         e.preventDefault();
-        /*console.log(e);
-        console.log(e.currentTarget.attributes);*/
+        console.log(e);
+        console.log(e.currentTarget.attributes);
 
         let nameTarget = e.currentTarget.alt
         let imagenCertificado = document.getElementById('imagenCertificado')
@@ -113,7 +113,7 @@ $(window).ready(function(){
                 
             break;
         }
-    })
+    })*/
 
     $(".disabledLink").click(function(e){
         e.preventDefault();
