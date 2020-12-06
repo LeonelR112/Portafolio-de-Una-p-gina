@@ -74,6 +74,20 @@ main{
 .imgCard1{
     height: 320px;
     width: 100%;
+    background-image:  url(./../assets/imgs/pageExample.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    transition-property: background-image;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in;
+}
+
+.imgCard1:hover{
+    background-image:url('./../assets/imgs/tshit-template.gif');
+    background-position: center;
+    background-size: 100% 100%;
 }
 
 .quickView{
@@ -284,6 +298,7 @@ main{
 .proyecto{
     position: relative;
     overflow: hidden;
+    padding: 0px;
 }
 
 .proyecto:hover .quickView{
